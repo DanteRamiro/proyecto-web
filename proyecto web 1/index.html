@@ -1,50 +1,63 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8" />
-    <title>Ejemplo de formateo de tabla</title>
-    <link rel="stylesheet" href="estilo.css" />
+	<meta charset="UTF-8">
+	<title>Mi Curriculum Vitae</title>
+	<link rel="stylesheet" href="estilo.css">
 </head>
-
 <body>
-    <table summary="Tipos de cambio">
-	    <tr>
-            <th scope="col">Cambio</th>
-            <th scope="col">Compra</th>
-            <th scope="col">Venta</th>
-            <th scope="col">Máximo</th>
-            <th scope="col">Mínimo</th>
-	    </tr>
-	    <tr>
-            <th class="euro" scope="row">Euro/Dolar</th>
-            <td>1.2524</td>
-            <td>1.2527</td>
-            <td>1.2539</td>
-            <td>1.2488</td>
-	    </tr>
-	    <tr class="par">
-            <th class="dolar" scope="row">Dolar/Yen</th>
-            <td>119.01</td>
-            <td>119.05</td>
-            <td>119.82</td>
-            <td>119.82</td>
-	    </tr>
-	    <tr>
-            <th class="libra" scope="row">Libra/Dolar</th>
-            <td>1.8606</td>
-            <td>1.8611</td>
-            <td>1.8651</td>
-            <td>1.8522</td>
-	    </tr>
-	    <tr class="par">
-            <th class="yen" scope="row">Yen/Euro</th>
-            <td>149.09</td>
-            <td>149.13</td>
-            <td>149.79</td>
-            <td>148.96</td>
-	    </tr>
-    </table>
-</body>
+	<header class="header">
+		<h1 class="header__name"> <strong>Dante Lezcano</strong></h1>
+		<h2 class="header__career">programador web </h2>
+		<img class="header__image" src="imagen.png" width="150" height="150" alt="Imagen de la persona">
+	</header>
 
+	<section class="main">
+		<div class="main__left">
+			<h2 class="left__title">Sobre mí</h2>
+			<p class="left__content">soy estudiante de la universidad UNO y estoy cursando la materia de tecnicatura en tecnologias web</p>
+			<h2 class="left__title">Contacto</h2>
+			<p class="left__content">Correo electrónico: dantelezcano05@gmail.com </p>
+		</div>
+		<div class="main__right">
+			<h2 class="right__title">Experiencia Laboral</h2>
+			<ul class="right__list">
+				<li class="right__item">trabajo en empresa Google</li>
+				<li class="right__item">programador en pagina de Mercado Libre</li>
+				<li class="right__item">Trabajo en Facebook</li>
+			</ul>
+			<h2 class="right__title">Estudios</h2>
+			<ul class="right__list">
+				<li class="right__item">Universidad Nacional del Oeste</li>
+				<li class="right__item">E.E.T N2 Merlo</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="form">
+		<h2 class="form__title">Contáctame</h2>
+		<form class="form__content" action="enviar.php" method="post">
+			<label for="nombre">Nombre:</label>
+			<input type="text" id="nombre" name="nombre" required>
+			<label for="correo">Correo electrónico:</label>
+			<input type="email" id="correo" name="correo" required>
+			<label for="contraseña">Contraseña:</label>
+			<input type="password" id="contraseña" name="contraseña" required>
+			<label for="mensaje">Mensaje:</label>
+			<textarea id="mensaje" name="mensaje" required></textarea>
+			<input type="submit" value="Enviar">
+		</form>
+	</section>
+
+	<footer class="footer">
+			
+		<div class="footer__middle">
+			<p class="footer__content">primer pagina</p>
+		</div>
+		<div class="footer__right">
+			<p class="footer__content">Creado por dante lezcano</p>
+		</div>
+	</footer>
+
+</body>
 </html>
