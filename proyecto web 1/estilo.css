@@ -102,7 +102,7 @@ img {
 }
 
 .form__content {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
 }
 
@@ -112,7 +112,7 @@ label {
 }
 
 input, textarea {
-    font-size: 16px;
+    font-size: 30px;
     padding: 5px;
     margin-bottom: 10px;
     border: none;
